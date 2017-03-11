@@ -12,6 +12,8 @@ import { SettingsViewComponent } from './views/settings-view/settings-view.compo
 import { ManageListingsViewComponent } from './views/manage-listings-view/manage-listings-view.component';
 import { IndividualListingViewComponent } from './views/individual-listing-view/individual-listing-view.component';
 import { DirectoryViewComponent } from './views/directory-view/directory-view.component';
+import { NavBarPartComponent } from './parts/nav-bar-part/nav-bar-part.component';
+import { SignUpPartComponent } from './parts/sign-up-part/sign-up-part.component';
 
 import { MaterialModule } from '@angular/material';
 
@@ -33,6 +35,8 @@ import { MaterialModule } from '@angular/material';
     ManageListingsViewComponent,
     IndividualListingViewComponent,
     DirectoryViewComponent,
+    NavBarPartComponent,
+    SignUpPartComponent,
   ],
   imports: [
     BrowserModule,
