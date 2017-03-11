@@ -7,13 +7,14 @@
 .logo{
     position:relative;
     float:right;
+    margin-right: -30px;
 }
 
 .big-heading{
     text-align: left;
     font-size: 130px;
     color: 	#4a4040;
-    padding: 20px 0px 20px 60px;
+    padding: 20px 90px 20px 60px;
 }
 
 .medium-heading{
@@ -21,7 +22,6 @@
 }
 
 .login-form{
-    float:left;
     padding: 20px 200px 20px 200px;
 }
 
@@ -31,4 +31,11 @@
 
 .full-width{
     width:100%;
+}
+
+.divider-line{
+    width:1px;
+    background:rgb(225,225,225);
+    height:400px;
+    margin-top: 150px;
 }
