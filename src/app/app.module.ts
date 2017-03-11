@@ -3,6 +3,7 @@ import { NgModule } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 import { HttpModule } from '@angular/http';
 import { RouterModule, Routes } from '@angular/router';
+import { AngularFireModule } from 'angularfire2';
 
 import { AppComponent } from './app.component';
 
@@ -16,6 +17,14 @@ import { NavBarPartComponent } from './parts/nav-bar-part/nav-bar-part.component
 import { SignUpPartComponent } from './parts/sign-up-part/sign-up-part.component';
 
 import { MaterialModule } from '@angular/material';
+
+export const firebaseConfig = {
+    apiKey: "AIzaSyDXdjt0kAV-k9WAUyXC-rMxFut9DygfSxU",
+    authDomain: "where-beer.firebaseapp.com",
+    databaseURL: "https://where-beer.firebaseio.com",
+    storageBucket: "where-beer.appspot.com",
+    messagingSenderId: "1025843505306"
+};
 
 //Routes
  const appRoutes : Routes = [
@@ -43,7 +52,8 @@ import { MaterialModule } from '@angular/material';
     FormsModule,
     HttpModule,
     MaterialModule,
-    RouterModule.forRoot(appRoutes)
+    RouterModule.forRoot(appRoutes),
+    AngularFireModule.initializeApp(firebaseConfig)
   ],
   providers: [],
   bootstrap:[ AppComponent ]
