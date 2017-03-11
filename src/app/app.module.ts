@@ -10,6 +10,8 @@ import { ManageListingsViewComponent } from './views/manage-listings-view/manage
 import { IndividualListingViewComponent } from './views/individual-listing-view/individual-listing-view.component';
 import { DirectoryViewComponent } from './views/directory-view/directory-view.component';
 
+import { MaterialModule } from '@angular/material';
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -22,7 +24,8 @@ import { DirectoryViewComponent } from './views/directory-view/directory-view.co
   imports: [
     BrowserModule,
     FormsModule,
-    HttpModule
+    HttpModule,
+    MaterialModule
   ],
   providers: [],
   bootstrap: [AppComponent]
