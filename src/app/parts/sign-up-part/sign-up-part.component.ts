@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 
 @Component({
-  selector: 'wb-sign-up-part',
+  selector: 'wb-sign-up',
   templateUrl: './sign-up-part.component.html',
   styleUrls: ['./sign-up-part.component.css']
 })
