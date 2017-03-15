@@ -1,0 +1,9 @@
+{
+    "listings":{
+        "2j31k2j3hj123h12k3j":{
+            "name":'Philip's Bar',
+            "locationLat":123.12,
+            "locationLong":343.22
+        }
+    }
+}

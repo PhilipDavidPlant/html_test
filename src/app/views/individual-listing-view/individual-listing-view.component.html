@@ -1,3 +1,6 @@
-<p>
-  individual-listing-view works!
-</p>
+<h1>
+  <span *ngIf="!editMode" class="edit-span">{{listing.title}}</span>
+  <md-input-container *ngIf="editMode">
+    <input mdInput placeholder="Listing Title">
+  </md-input-container>
+<h1>
