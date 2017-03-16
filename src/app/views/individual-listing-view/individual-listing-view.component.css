@@ -1,0 +1,32 @@
+.view-edit-input /deep/ .mat-input-underline.mat-disabled{
+    opacity:0;
+}
+
+.view-edit-input /deep/ .mat-input-placeholder{
+    opacity:1;
+    transition: 0.5s;
+}
+
+
+.view-edit-input.disabled /deep/ .mat-input-placeholder{
+    opacity:0;
+    transition: 0.5s;
+}
+
+.input-wrapper{
+    font-size: 40px; 
+    padding:50px;
+}
+
+.edit-button{
+    width:56px;
+    height:56px;
+    position:fixed;
+    bottom:30px;
+    right:30px;
+    background: rgb(220,220,220)
+}
+
+.form-grid{
+    text-align: center;
+}

@@ -1,6 +1,11 @@
-<h1>
-  <span *ngIf="!editMode" class="edit-span">{{listing.title}}</span>
-  <md-input-container *ngIf="editMode">
-    <input mdInput placeholder="Listing Title">
+<button class="edit-button" md-icon-button (click)="toggleEdit()" color="primary">
+  <md-icon>create</md-icon>
+</button>
+
+
+<div class="input-wrapper">
+  <!--<div *ngIf="!editMode" class="edit-span">{{listing.title}}</div>-->
+  <md-input-container class="view-edit-input" [ngClass]="{'disabled':editMode}">
+    <input mdInput placeholder="Listing Title" [disabled]="editMode">
   </md-input-container>
-<h1>
+</div>

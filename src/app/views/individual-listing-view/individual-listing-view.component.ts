@@ -7,6 +7,16 @@ import { Component, OnInit } from '@angular/core';
 })
 export class IndividualListingViewComponent implements OnInit {
 
+  listing: any = {
+    title:"Philip's Bar"
+  }
+
+  editMode:boolean = false;
+
+  toggleEdit(){
+    this.editMode = !this.editMode;
+  }
+
   constructor() { }
 
   ngOnInit() {
