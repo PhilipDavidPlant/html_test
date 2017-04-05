@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { AngularFire } from 'angularfire2';
 
 @Component({
   selector: 'wb-login-view',
@@ -7,9 +8,17 @@ import { Component, OnInit } from '@angular/core';
 })
 export class LoginViewComponent implements OnInit {
 
-  constructor() { }
+  constructor(public fire: AngularFire) {}
+
+  login() {
+    this.fire.auth.login();
+  }
+
+  logout() {
+     this.fire.auth.logout();
+  }
 
   ngOnInit() {
   }
 
-}
+Uymk}

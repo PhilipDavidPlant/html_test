@@ -12,18 +12,18 @@
                     <tr>
                         <td>
                             <md-input-container class="full-width">
-                                <input mdInput placeholder="Username">
+                                <input (ngModel)="clientEmail" mdInput placeholder="Username">
                             </md-input-container>
                         </td>
                     </tr>
                     <tr>
                         <td>
                             <md-input-container class="full-width">
-                                <input type="password" mdInput placeholder="Password">
+                                <input (ngModel)="clientPassword" type="password" mdInput placeholder="Password">
                             </md-input-container>
                         </td>
                     </tr>
-                    <tr><button md-button>Submit</button></tr>
+                    <tr><button md-button (click)="login()">Submit</button></tr>
                     <tr><button md-button (click)="onClick()" >Sign up!</button></tr>
                 </table>
             </form>
